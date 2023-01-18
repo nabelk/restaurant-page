@@ -1,3 +1,8 @@
+:root {
+    /* Header & footer  */
+    --theme-color: rgb(218, 165, 32, 0.7);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,16 +10,83 @@
 }
 
 #content {
+    background-image: url('bg-img.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto 1fr auto;
     background-color: antiquewhite;
+    overflow: auto;
 }
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
     gap: 10px;
-    background-color: red;
-    padding: 50px;
+    background-color: var(--theme-color);
+    padding: 35px;
+}
+
+header h2 {
+    width: 150px;
+    text-align: center;
+}
+
+nav button {
+    height: fit-content;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    padding: 35px 70px;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    transition: all 1.2s ease-out;
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+}
+
+main h1 {
+    padding: 10px;
+    text-align: justify;
+    white-space: pre-line;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    padding: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visuallyhidden {
+    opacity: 0;
+}
+
+footer {
+    background-color: var(--theme-color);
+    text-align: center;
+    padding: 8px;
+}
+
+footer svg {
+    width: 1.3rem;
 }
