@@ -5,6 +5,8 @@ const pageLoad = (() => {
     const main = document.createElement('main');
     const footer = document.createElement('footer');
     const nav = document.createElement('nav');
+    header.setAttribute('transition-style', 'in:wipe:down');
+    footer.setAttribute('transition-style', 'in:wipe:up');
 
     const createBtn = (name) => {
         const button = document.createElement('button');
