@@ -36,6 +36,12 @@ header h2 {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    gap: 30px;
+    padding: 5px;
+}
+
 nav button {
     height: fit-content;
 }
@@ -49,7 +55,7 @@ main {
     padding: 35px 70px;
 }
 
-main div {
+main > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,18 +65,44 @@ main div {
     padding: 10px;
     height: 100%;
     width: 50%;
+    padding: 20px 40px;
+    background-color: var(--theme-color);
 }
 
-main h1 {
+main.home h1 {
     padding: 10px;
     text-align: justify;
     white-space: pre-line;
 }
 
-nav {
+/* Menu tab */
+
+main.menu > div,
+main.contact > div {
+    width: 80%;
+    gap: 20px;
+}
+
+main.menu > div > div {
+    width: 100%;
+    padding: 20px;
     display: flex;
-    gap: 30px;
-    padding: 5px;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main.menu img {
+    width: 261px;
+    height: 261px;
+}
+
+div.description {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .hidden {
