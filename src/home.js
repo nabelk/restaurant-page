@@ -6,10 +6,12 @@ const home = (() => {
         const div = document.createElement('div');
         const h1 = document.createElement('h1');
         const button = document.createElement('button');
-        button.className = 'to-menu';
         h1.textContent =
-            'Get a mouthful of unique tastes from our Malay Cuisine.\r\nOur dishes are from old family recipes and what you taste is a home cook food.';
+            'Get a mouthful of unique tastes from\r\nour Malay Cuisine.\r\nOur dishes are from old family recipes\r\nand what you taste is a home cook food.';
         button.textContent = 'View Our Menu';
+        button.addEventListener('click', () =>
+            document.querySelector('button.menu').click()
+        );
         div.append(h1, button);
         div.className = 'hidden visuallyhidden';
         main.appendChild(div);
