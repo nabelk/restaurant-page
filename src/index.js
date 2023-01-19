@@ -9,9 +9,7 @@ pageLoad.setPage();
 home.renderHome();
 
 const buttonEvent = () => {
-    const redirectMenuBtn = document.querySelector('.to-menu');
     const button = document.querySelectorAll('header button');
-    redirectMenuBtn.addEventListener('click', () => menu.renderMenu());
     button.forEach((btn) => {
         btn.addEventListener('click', (e) => {
             switch (e.target.className) {
