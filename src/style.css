@@ -1,3 +1,5 @@
+@import 'transition-style';
+
 :root {
     /* Header & footer  */
     --theme-color: rgb(218, 165, 32, 0.7);
@@ -52,7 +54,7 @@ main {
     justify-content: flex-start;
     align-items: center;
     width: 100vw;
-    padding: 35px 70px;
+    padding: 80px 70px;
 }
 
 main > div {
@@ -61,26 +63,26 @@ main > div {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    transition: all 1.2s ease-out;
-    padding: 10px;
+    transition: all 1s ease-out;
+    padding: 35px;
     height: 100%;
-    width: 50%;
-    padding: 20px 40px;
+    width: 60%;
     background-color: var(--theme-color);
+    border-radius: 1px;
 }
 
 main.home h1 {
     padding: 10px;
-    text-align: justify;
+    text-align: center;
     white-space: pre-line;
 }
 
 /* Menu tab */
 
-main.menu > div,
-main.contact > div {
-    width: 80%;
+main.menu > div {
+    width: 65%;
     gap: 20px;
+    padding: 40px;
 }
 
 main.menu > div > div {
@@ -103,6 +105,20 @@ div.description {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+/* Contact tab */
+
+main.contact > div {
+    gap: 20px;
+    width: 45%;
+}
+
+iframe {
+    width: 400px;
+    height: 300px;
+    border: none;
+    border-radius: 5px;
 }
 
 .hidden {
