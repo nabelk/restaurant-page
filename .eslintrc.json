@@ -14,7 +14,8 @@
         "no-unused-vars": "off",
         "default-case": "off",
         "no-param-reassign": "off",
-        "import/no-cycle": "off"
+        "import/no-cycle": "off",
+        "no-plusplus": "off"
     },
     "extends": ["airbnb-base", "prettier"]
 }
