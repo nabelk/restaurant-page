@@ -28,6 +28,7 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "transition-style": "^0.1.3"
   }
 }
