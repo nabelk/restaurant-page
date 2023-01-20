@@ -7,6 +7,7 @@ import contact from './contact';
 
 pageLoad.setPage();
 home.renderHome();
+document.title = 'Rasa Kemelayuan';
 
 const buttonEvent = () => {
     const button = document.querySelectorAll('header button');
