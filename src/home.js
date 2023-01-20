@@ -7,7 +7,7 @@ const home = (() => {
         const h1 = document.createElement('h1');
         const button = document.createElement('button');
         h1.textContent =
-            'Get a mouthful of unique tastes from\r\nour Malay Cuisine.\r\nOur dishes are from old family recipes\r\nand what you taste is a home cook food.';
+            'Get a mouthful of unique tastes from\r\nour Malay Cuisine.';
         button.textContent = 'View Our Menu';
         button.addEventListener('click', () =>
             document.querySelector('button.menu').click()

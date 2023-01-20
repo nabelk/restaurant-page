@@ -46,12 +46,12 @@ const pageLoad = (() => {
 
     const setPage = () => {
         const logoText = document.createElement('h2');
-        logoText.textContent = 'Rasa Kemelayuan';
+        logoText.textContent = 'Rasa\r\nKemelayuan';
         logoText.className = 'logo';
         createBtn('Home');
         createBtn('Menu');
         createBtn('Contact');
-        footer.textContent = 'Powered by ';
+        footer.textContent = '© Copyright 2022. Powered by ';
         footer.appendChild(renderGitHubIcon());
         header.append(logoText, nav);
         document.querySelector('#content').append(header, main, footer);
